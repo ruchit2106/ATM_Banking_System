@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    string a="C:\Users\Ruchit\Github\ATM_BANKING_SYSTEM\IMAGES\hey.txt";
+    string a="D:\GitHubClonedRepo\ATM_Banking_System";//Aadit
     std::cout<<a;
-    
+    cout<<"Hello Github"<<endl;
 }
