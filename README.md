@@ -1,9 +1,10 @@
 # ATM_Banking_System
-<<<<<<< Updated upstream
 
 sdfdsfsdsdsddsf
-=======
     Hello github
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
 THis is 3rd commit
+=======
+>>>>>>> Stashed changes
