@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aadit\\source\\repos\\ATM_Banking_System\\ATM_Banking_System.csproj": {}
+    "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aadit\\source\\repos\\ATM_Banking_System\\ATM_Banking_System.csproj": {
+    "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aadit\\source\\repos\\ATM_Banking_System\\ATM_Banking_System.csproj",
+        "projectUniqueName": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
         "projectName": "ATM_Banking_System",
-        "projectPath": "C:\\Users\\aadit\\source\\repos\\ATM_Banking_System\\ATM_Banking_System.csproj",
+        "projectPath": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
         "packagesPath": "C:\\Users\\aadit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aadit\\source\\repos\\ATM_Banking_System\\obj\\",
+        "outputPath": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aadit\\AppData\\Roaming\\NuGet\\NuGet.Config",

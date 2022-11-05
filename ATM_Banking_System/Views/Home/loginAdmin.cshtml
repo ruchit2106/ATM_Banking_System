@@ -7,19 +7,15 @@
 <form action="/Admins/AdminDashboard" method="POST">
     <table border="3">
         <tr>
-            <td><a href="/Admins/ChangeProfile">Change Profile</a></td>
-            <td><a href="/Admins/ManageUsers">Manage Users</a></td>
+            <td>Username:</td>
+            <td><input type="text" required /></td>
         </tr>
         <tr>
-            <td><a href="/Admins/ViewATMBalance">View ATM Balance</a></td>
-            <td><a href="/Admins/ViewTransactionHistory">View Transaction History</a></td>
+            <td>Password</td>
+            <td><input type="password" required /></td>
         </tr>
         <tr>
-            <td><a href="/Admins/Deposit">Deposit Money</a></td>
-            <td><a href="/Admins/Withdraw">Withdraw Money</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><a href="/">Logout</a></td>
+            <td colspan="2" align="center"><input type="submit" value="Login" /></td>
         </tr>
     </table>
 
