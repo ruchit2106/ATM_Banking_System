@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ATM_Banking_System.Migrations
 {
     [DbContext(typeof(MyAppDbContext))]
-    [Migration("20221105074052_First Migration")]
+    [Migration("20221105133044_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
