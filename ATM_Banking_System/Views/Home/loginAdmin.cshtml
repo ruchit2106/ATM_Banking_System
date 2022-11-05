@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form action="/Admins/AdminDashboard" method="POST">
+    <table border="3">
+        <tr>
+            <td><a href="/Admins/ChangeProfile">Change Profile</a></td>
+            <td><a href="/Admins/ManageUsers">Manage Users</a></td>
+        </tr>
+        <tr>
+            <td><a href="/Admins/ViewATMBalance">View ATM Balance</a></td>
+            <td><a href="/Admins/ViewTransactionHistory">View Transaction History</a></td>
+        </tr>
+        <tr>
+            <td><a href="/Admins/Deposit">Deposit Money</a></td>
+            <td><a href="/Admins/Withdraw">Withdraw Money</a></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><a href="/">Logout</a></td>
+        </tr>
+    </table>
+
+</form>
