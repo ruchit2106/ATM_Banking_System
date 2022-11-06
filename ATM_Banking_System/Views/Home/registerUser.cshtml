@@ -1,41 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ATM_Banking_System.Models.AddUser
 @{
 }
 
-<form action="/" method="POST">
+<form action="/Home/registerUser" method="POST">
     <table border="3">
         <tr>
             <th colspan="2" align="center">REGISTERATION FORM</th>
         </tr>
         <tr>
             <td>Account No</td>
-            <td><input type="number" required /></td>
+            <td><input type="number" required asp-for="AccNo"/></td>
         </tr>
         <tr>
             <td>PIN</td>
-            <td><input type="password" required /></td>
+            <td><input type="number" required asp-for="PIN"/></td>
         </tr>
         <tr>
             <td>Full Name</td>
-            <td><input type="text" required /></td>
+            <td><input type="text" required asp-for="FullName"/></td>
         </tr>
         <tr>
             <td>Gender</td>
-            <td><input type="text" required /></td>
+            <td><input type="text" required asp-for="Gender"/></td>
         </tr>
         <tr>
             <td>D.O.B</td>
-            <td><input type="date" required /></td>
+            <td><input type="date" required asp-for="DOB"/></td>
         </tr>
         <tr>
             <td>Address</td>
-            <td><input type="text" required /></td>
+            <td><input type="text" required asp-for="Address"/></td>
         </tr>
         <tr>
             <td>Phone No</td>
-            <td><input type="text" required /></td>
+            <td><input type="text" required asp-for="PhoneNo"/></td>
         </tr>
         <tr>
             <td colspan="2" align="center"><input type="submit" value=" Register "/></td>

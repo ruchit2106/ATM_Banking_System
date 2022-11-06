@@ -1,18 +1,16 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ATM_Banking_System.Models.loginAdmin
 @{
 }
 
-<form action="/Admins/AdminDashboard" method="POST">
+<form action="/Home/loginAdmin" method="POST">
     <table border="3">
         <tr>
             <td>Username:</td>
-            <td><input type="text" required /></td>
+            <td><input type="text" required asp-for="Username"/></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="password" required /></td>
+            <td><input type="password" required asp-for="Password"/></td>
         </tr>
         <tr>
             <td colspan="2" align="center"><input type="submit" value="Login" /></td>

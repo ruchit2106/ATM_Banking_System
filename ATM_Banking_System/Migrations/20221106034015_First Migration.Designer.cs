@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ATM_Banking_System.Migrations
 {
     [DbContext(typeof(MyAppDbContext))]
-    [Migration("20221105133044_FirstMigration")]
+    [Migration("20221106034015_First Migration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,11 +26,9 @@ namespace ATM_Banking_System.Migrations
 
             modelBuilder.Entity("ATM_Banking_System.Models.Admins", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -66,11 +64,9 @@ namespace ATM_Banking_System.Migrations
 
             modelBuilder.Entity("ATM_Banking_System.Models.Transaction", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int?>("AccNo")
                         .HasColumnType("int");
@@ -91,11 +87,9 @@ namespace ATM_Banking_System.Migrations
 
             modelBuilder.Entity("ATM_Banking_System.Models.Users", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("AccNo")
                         .HasColumnType("int");
