@@ -195,6 +195,7 @@ namespace ATM_Banking_System.Controllers
         [HttpGet]
         public IActionResult FastCash()
         {
+
             return View();
         }
     }
