@@ -198,5 +198,50 @@ namespace ATM_Banking_System.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> FastCash(int denomination)
+        {
+            string query = "SELECT currAmountOfATM FROM [Transaction] WHERE id= (SELECT MAX (Id) FROM [Transaction])";
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(query, con);
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable ds = new DataTable();
+            sda.Fill(ds);
+            con.Close();
+
+            int amount = Convert.ToInt32(ds.Rows[0][0]);
+
+            string query1 = "SELECT Balance FROM Users WHERE AccNo=@AccNo";
+            SqlCommand cmd1 = new SqlCommand(query1, con);
+            cmd1.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            con.Open();
+            SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
+            DataTable ds1 = new DataTable();
+            sda1.Fill(ds1);
+            con.Close();
+
+            string query2 = "UPDATE Users SET Balance = @Balance WHERE AccNo=@AccNo;";
+            SqlCommand cmd2 = new SqlCommand(query2, con);
+            cmd2.Parameters.AddWithValue("@Balance", (Convert.ToInt32(ds1.Rows[0][0]) - denomination));
+            cmd2.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            con.Open();
+            cmd2.ExecuteNonQuery();
+            con.Close();
+
+            Transaction t = new Transaction();
+            t.Type = "Withdraw";
+            t.AccNo = httpContextAccessor.HttpContext.Session.GetInt32("AccNo");
+            t.dtOfTransaction = DateTime.Now;
+            t.Amount = denomination;
+            t.currAmountOfATM = (amount - denomination);
+            await myAppDbContext.Transaction.AddAsync(t);
+            await myAppDbContext.SaveChangesAsync();
+
+            //return "The value you clicked is " + denomination;
+            return RedirectToAction("FastCash");
+        }
     }
 }

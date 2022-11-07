@@ -5,7 +5,21 @@
 }
 
 <h1>FAST CASH</h1>
-<div class="btn btn-primary">100Rs</div><br />
-<div class="btn btn-primary">200Rs</div><br />
-<div class="btn btn-primary">500Rs</div><br />
-<div class="btn btn-primary">2000Rs</div><br />
+<form action="/Users/FastCash" method="post">
+    <table border="3">
+        <tr>
+            <th>Choose which type of denomination<br/> you want to withdraw</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="denomination" value="100"/>100Rs</td>
+            <td><input type="radio" name="denomination" value="200"/>200Rs</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="denomination" value="500"/>500Rs</td>
+            <td><input type="radio" name="denomination" value="2000"/>2000Rs</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="withdraw" /></td>
+        </tr>
+    </table>
+</form>
