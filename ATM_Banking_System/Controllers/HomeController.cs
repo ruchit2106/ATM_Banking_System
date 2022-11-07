@@ -9,15 +9,18 @@ namespace ATM_Banking_System.Controllers
     public class HomeController : Controller
     {
         private readonly IConfiguration configuration;
+        public readonly IHttpContextAccessor httpContextAccessor;
+
         private readonly ILogger<HomeController> _logger;
         private readonly MyAppDbContext myAppDbContext;
         public string connectionString; 
 
-        public HomeController(ILogger<HomeController> logger, MyAppDbContext myAppDbContext,IConfiguration iconfig)
+        public HomeController(ILogger<HomeController> logger, MyAppDbContext myAppDbContext,IConfiguration iconfig,IHttpContextAccessor contxtAccessor)
         {
             _logger = logger;
             this.myAppDbContext = myAppDbContext;
             this.configuration = iconfig;
+            this.httpContextAccessor = contxtAccessor;
         }
 
         public IActionResult Index()
@@ -50,6 +53,7 @@ namespace ATM_Banking_System.Controllers
             con.Close();
             if(c==1)
             {
+                httpContextAccessor.HttpContext.Session.SetInt32("AccNo",u.AccNo);
                 return RedirectToAction("UserDashboard","Users");
             }
             else
@@ -79,6 +83,10 @@ namespace ATM_Banking_System.Controllers
             con.Close();
             if (c == 1)
             {
+                httpContextAccessor.HttpContext.Session.SetString("Username",au.Username);
+                httpContextAccessor.HttpContext.Session.SetString("Password",au.Password);
+                //httpContextAccessor.HttpContext.Session.SetInt32("AccNo",);
+                
                 return RedirectToAction("AdminDashboard", "Admins");
             }
             else
