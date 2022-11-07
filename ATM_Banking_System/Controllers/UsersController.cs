@@ -146,9 +146,28 @@ namespace ATM_Banking_System.Controllers
         }
 
         [HttpGet]
-        public IActionResult TransactionLog()
+        public IActionResult TransactionLog() //Ready
         {
-
+            List<Transaction> lT=new List<Transaction>();
+            SqlConnection con = new SqlConnection(connectionString);
+            string query = "SELECT * FROM [Transaction] WHERE [AccNo]=@AccNo";
+            SqlCommand cmd = new SqlCommand(query,con);
+            cmd.Parameters.AddWithValue("@AccNo",httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            con.Open();
+            SqlDataReader sdr;
+            sdr=cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                lT.Add(new Transaction()
+                {
+                    Type = sdr["Type"].ToString(),
+                    AccNo = Convert.ToInt32(sdr["AccNo"]),
+                    dtOfTransaction = Convert.ToDateTime(sdr["dtOfTransaction"]),
+                    Amount = Convert.ToInt32(sdr["Amount"]),
+                });
+            }
+            con.Close();
+            ViewData["TransactionData"] = lT;
             return View();
         }
 

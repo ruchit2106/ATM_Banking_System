@@ -2,6 +2,41 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    string[] TableHeaders = new string[]{
+        "Type",
+        "Date Of Transaction",
+        "Amount",
+    };
+
+    var tData = (List<Transaction>)ViewData["TransactionData"];
 }
 
 <h1>Transaction Log</h1>
+<div class="table">
+    
+    <table>
+        <thead>
+            <tr>
+                @{
+                    foreach(var head in TableHeaders)
+                    {
+                            <th>@head</th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+                @{
+                    foreach(var row in tData)
+                    {
+                        <tr>
+                            <td>@row.Type</td>
+                            <td>@row.dtOfTransaction</td>
+                            <td>@row.Amount</td>
+                        </tr>
+                    }
+                }
+        </tbody>
+    </table>
+
+</div>
