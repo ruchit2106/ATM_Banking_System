@@ -6,10 +6,20 @@
     <h1 class="display-4">Welcome</h1>
       
 </div>
+<style>
+    .mycard{
+        opacity:0.5;
+        transition: transform 0.3s;
+    }
+    .mycard:hover{
+        opacity:1;
+        transform: scale(1.1);
+    }
+</style>
 
 <div class="row row-cols-1 row-cols-md-3" style="margin-top:100px; justify-content:space-evenly;">
     
-    <div class="col mb-4" style=" height: 280px; width: 280px;">
+    <div class="col mb-4 mycard" style=" height: 260px; width: 260px;">
         <!-- Card -->
         <div class="card">
             <a href="Home/loginUser">
@@ -33,7 +43,7 @@
         </div>
         <!-- Card -->
     </div>
-    <div class="col mb-4" style=" height: 280px; width: 280px;">
+    <div class="col mb-4 mycard" style=" height: 260px; width: 260px;">
         <!-- Card -->
         <div class="card">
             <a href="Home/loginAdmin">
@@ -57,7 +67,7 @@
         </div>
         <!-- Card -->
     </div>
-    <div class="col mb-4" style=" height: 280px; width: 280px;">
+    <div class="col mb-4 mycard" style=" height: 260px; width: 260px;">
         <!-- Card -->
         <div class="card">
             <a href="Home/registerUser">
