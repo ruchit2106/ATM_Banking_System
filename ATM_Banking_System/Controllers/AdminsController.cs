@@ -55,9 +55,9 @@ namespace ATM_Banking_System.Controllers
         }
 
         [HttpGet]
-        public IActionResult ManageUsers()
+        public IActionResult ManageUsers()//Ready
         {
-            return View();
+            return RedirectToAction("Index","UserView");
         }
 
         /*[HttpPost]
