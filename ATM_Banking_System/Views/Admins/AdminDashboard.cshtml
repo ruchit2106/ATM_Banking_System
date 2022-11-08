@@ -1,9 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
+﻿<!--
 <table border="3">
     <tr>
         <td><a href="/Admins/ChangeProfile">Change Profile</a></td>
@@ -22,3 +17,170 @@
     </tr>
 
 </table>
+-->
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dashboard</h1>
+
+</div>
+<style>
+    .wrapper {
+        width: 220px;
+    }
+
+    .mycard {
+        height: 275px;
+        width: 190px;
+        opacity: 0.5;
+        transition: transform 0.3s;
+    }
+
+        .mycard:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+</style>
+<div class="container-fluid" style="width:870px">
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top:10px; justify-content:space-evenly;">
+        <div class="col wrapper">
+            <div class="card mycard ">
+                <a href="/Admins/ChangeProfile">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Change_Profile.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Change Profile</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard ">
+                <a href="/Admins/ManageUsers">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Manage_Users.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Manage Users</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Admins/ViewATMBalance">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/ATM_Balance.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">View ATM Balance</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Admins/ViewTransactionHistory">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/ATM_Log.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">ATM Transactions</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Admins/DepositMoney">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Add_ATM.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Add Money</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Admins/WithdrawMoney">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Remove_ATM.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Remove Money</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
