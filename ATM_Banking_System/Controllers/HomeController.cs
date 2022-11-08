@@ -84,7 +84,7 @@ namespace ATM_Banking_System.Controllers
             if (c == 1)
             {
                 httpContextAccessor.HttpContext.Session.SetString("Username",au.Username);
-                httpContextAccessor.HttpContext.Session.SetString("Password",au.Password);
+                //httpContextAccessor.HttpContext.Session.SetString("Password",au.Password);
                 //httpContextAccessor.HttpContext.Session.SetInt32("AccNo",);
                 
                 return RedirectToAction("AdminDashboard", "Admins");

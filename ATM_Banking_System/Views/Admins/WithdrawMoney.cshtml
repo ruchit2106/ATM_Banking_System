@@ -1,16 +1,14 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ATM_Banking_System.Models.AdminDeposit
 @{
 }
-<form action="" method="POST">
+<form action="/Admins/WithdrawMoney" method="POST">
     <table border="3">
         <tr>
             <th colspan="2" align="center">WITHDRAW MONEY</th>
         </tr>
         <tr>
             <td>Amount:</td>
-            <td><input type="number" /></td>
+            <td><input type="number" asp-for="Amount"/></td>
         </tr>
         <tr>
             <td><input type="submit" value=" withdraw " /></td>

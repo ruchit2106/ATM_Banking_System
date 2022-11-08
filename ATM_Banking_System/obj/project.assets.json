@@ -2012,19 +2012,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ruchit\\.nuget\\packages\\": {}
+    "C:\\Users\\aadit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
+      "projectUniqueName": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
       "projectName": "ATM_Banking_System",
-      "projectPath": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
-      "packagesPath": "C:\\Users\\Ruchit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\obj\\",
+      "projectPath": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\ATM_Banking_System.csproj",
+      "packagesPath": "C:\\Users\\aadit\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHubClonedRepo\\ATM_Banking_System\\ATM_Banking_System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ruchit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aadit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

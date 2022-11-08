@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ATM_Banking_System
 build_property.RootNamespace = ATM_Banking_System
-build_property.ProjectDir = C:\Users\Ruchit\Documents\GitHub\ATM_Banking_System\ATM_Banking_System\
+build_property.ProjectDir = D:\GitHubClonedRepo\ATM_Banking_System\ATM_Banking_System\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ruchit\Documents\GitHub\ATM_Banking_System\ATM_Banking_System
+build_property.MSBuildProjectDirectory = D:\GitHubClonedRepo\ATM_Banking_System\ATM_Banking_System
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/AdminDashboard.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/ChangeProfile.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/ChangeProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENoYW5nZVByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/DepositMoney.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/DepositMoney.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERlcG9zaXRNb25leS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/ManageUsers.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/ManageUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXE1hbmFnZVVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/ViewATMBalance.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/ViewATMBalance.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFZpZXdBVE1CYWxhbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/ViewTransactionHistory.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/ViewTransactionHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFZpZXdUcmFuc2FjdGlvbkhpc3RvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Admins/WithdrawMoney.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Admins/WithdrawMoney.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFdpdGhkcmF3TW9uZXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Home/Index.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Home/loginAdmin.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Home/loginAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbkFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Home/loginUser.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Home/loginUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Home/Privacy.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Home/registerUser.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Home/registerUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3RlclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Shared/Error.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/BalanceInquiry.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/BalanceInquiry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQmFsYW5jZUlucXVpcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/ChangePIN.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/ChangePIN.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ2hhbmdlUElOLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/Deposit.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/Deposit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVwb3NpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/FastCash.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/FastCash.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRmFzdENhc2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/TransactionLog.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/TransactionLog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVHJhbnNhY3Rpb25Mb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/UserDashboard.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Users/WIthdraw.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Users/WIthdraw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcV0l0aGRyYXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/_ViewImports.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/_ViewStart.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ruchit/Documents/GitHub/ATM_Banking_System/ATM_Banking_System/Views/Shared/_Layout.cshtml]
+[D:/GitHubClonedRepo/ATM_Banking_System/ATM_Banking_System/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-05g862c8xk
