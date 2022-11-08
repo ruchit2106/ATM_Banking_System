@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!--
 <table border="3">
     <tr>
         <td><a href="/Users/Deposit">Deposit</a></td>
@@ -20,3 +16,169 @@
         <td colspan="2" align="center"><a href="/">Logout</a></td>
     </tr>
 </table>
+-->
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Dashboard</h1>
+
+</div>
+<style>
+    .wrapper{
+        width:220px;
+    }
+    .mycard{
+        height:275px;
+        width:190px;
+        opacity: 0.5;
+        transition: transform 0.3s;
+    }
+
+    .mycard:hover {
+            opacity: 1;
+            transform: scale(1.1);
+    }
+</style>
+<div class="container-fluid" style="width:870px">
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top:10px; justify-content:space-evenly;">
+        <div class="col wrapper">
+            <div class="card mycard ">
+                <a href="/Users/Deposit">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Deposit.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Deposit</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard ">
+                <a href="/Users/Withdraw">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Withdraw.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Withdraw</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Users/BalanceInquiry">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Balance_Inquiry.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Balance Inquiry</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Users/TransactionLog">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Transaction_Log.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Transaction Log</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Users/ChangePIN">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Change_Pin.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Change PIN</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="col wrapper">
+            <div class="card mycard">
+                <a href="/Users/FastCash">
+                    <!--Card image-->
+
+                    <div class="view overlay">
+                        <img class="card-img-top" src="~/Assets/Images/Fast_Cash.png"
+                             alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" style="text-align:center">Fast Cash</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
