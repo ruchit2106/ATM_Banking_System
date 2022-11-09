@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+UxzRf7ju4FJtWZ9wJjZ1LfAOuzEXj78A9w+gWqw3r4=",
+  "Hash": "S34bEebndJ8lz4uWc9LbKh+B65pb4sQ+9Ya1J+bioXI=",
   "Source": "ATM_Banking_System",
   "BasePath": "_content/ATM_Banking_System",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ATM_Banking_System.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Add_ATM.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/Add_ATM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\Add_ATM.png"
+    },
+    {
       "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Admin.png",
       "SourceId": "ATM_Banking_System",
       "SourceType": "Discovered",
@@ -66,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\Images\\Admin.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\ATM_Balance.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/ATM_Balance.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\ATM_Balance.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\ATM_Log.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/ATM_Log.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\ATM_Log.png"
     },
     {
       "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Balance_Inquiry.png",
@@ -100,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\Images\\Change_Pin.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Change_Profile.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/Change_Profile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\Change_Profile.png"
     },
     {
       "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Deposit.png",
@@ -170,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\Assets\\Images\\Login_User.png"
     },
     {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Manage_Users.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/Manage_Users.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\Manage_Users.png"
+    },
+    {
       "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Register_User.png",
       "SourceId": "ATM_Banking_System",
       "SourceType": "Discovered",
@@ -185,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\Images\\Register_User.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Remove_ATM.png",
+      "SourceId": "ATM_Banking_System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\",
+      "BasePath": "_content/ATM_Banking_System",
+      "RelativePath": "Assets/Images/Remove_ATM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Images\\Remove_ATM.png"
     },
     {
       "Identity": "C:\\Users\\Ruchit\\Documents\\GitHub\\ATM_Banking_System\\ATM_Banking_System\\wwwroot\\Assets\\Images\\Transaction_Log.png",
