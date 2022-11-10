@@ -10,31 +10,34 @@
     var tData = (List<Transaction>)ViewData["tData"];
 
 }
-<h1>View Transaction History</h1>
-<div class="table">
-    <table>
-        <thead>
-        <tr>
-            @{
-                foreach(var head in tableHeaders)
-                {
-                    <th>@head</th>
+<div class="container" style="width:500px">
+    <h1>View Transaction History</h1>
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                @{
+                    foreach(var head in tableHeaders)
+                    {
+                        <th>@head</th>
+                    }
                 }
-            }
-        </tr>
-        </thead>
-        <tbody>
-            @{
-                foreach (var row in tData)
-                {
-                    <tr>
-                        <td>@row.Type</td>
-                        <td>@row.AccNo</td>
-                        <td>@row.dtOfTransaction</td>
-                        <td>@row.Amount</td>
-                    </tr>
+            </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var row in tData)
+                    {
+                        <tr>
+                            <td>@row.Type</td>
+                            <td>@row.AccNo</td>
+                            <td>@row.dtOfTransaction</td>
+                            <td>@row.Amount</td>
+                        </tr>
+                    }
                 }
-            }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
+    <p class="text-center"><a href="/Admins/AdminDashboard">Go Back to Dashboard</a></p>
 </div>

@@ -10,33 +10,35 @@
 
     var tData = (List<Transaction>)ViewData["TransactionData"];
 }
-
-<h1>Transaction Log</h1>
-<div class="table">
+<div class="container" style="width:350px">
+    <h1>Transaction Log</h1>
+    <div class="table">
     
-    <table>
-        <thead>
-            <tr>
-                @{
-                    foreach(var head in TableHeaders)
-                    {
-                            <th>@head</th>
+        <table>
+            <thead>
+                <tr>
+                    @{
+                        foreach(var head in TableHeaders)
+                        {
+                                <th>@head</th>
+                        }
                     }
-                }
-            </tr>
-        </thead>
-        <tbody>
-                @{
-                    foreach(var row in tData)
-                    {
-                        <tr>
-                            <td>@row.Type</td>
-                            <td>@row.dtOfTransaction</td>
-                            <td>@row.Amount</td>
-                        </tr>
+                </tr>
+            </thead>
+            <tbody>
+                    @{
+                        foreach(var row in tData)
+                        {
+                            <tr>
+                                <td>@row.Type</td>
+                                <td>@row.dtOfTransaction</td>
+                                <td>@row.Amount</td>
+                            </tr>
+                        }
                     }
-                }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
+    </div>
+    <p class="text-center"><a href="/Users/UserDashboard">Go Back to Dashboard</a></p>
 </div>
