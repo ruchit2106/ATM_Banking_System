@@ -82,10 +82,9 @@
             <h2 class="text-center">Register New User</h2>
             <div class="form-group">
                 <input type="number" class="form-control" placeholder="Account Number" required asp-for="AccNo" />
-
+                <span asp-validation-for="AccNo" class="text-danger">AccNo is Required</span>
             </div>
             <div class="form-group">
-
                 <input type="password" class="form-control" placeholder="PIN" required asp-for="PIN" />
             </div>
             <div class="form-group">
@@ -94,7 +93,9 @@
             </div>
             <div class="form-group">
 
-                <input type="text" class="form-control" placeholder="Gender" required asp-for="Gender" />
+                <input type="radio" asp-for="Gender" value="M">Male<br/>
+                <input type="radio" asp-for="Gender" value="F">Female<br/>
+                <input type="radio" asp-for="Gender" value="O">Other<br/>
 
             </div>
             <div class="form-group">
@@ -109,10 +110,7 @@
 
             </div>
             <div class="form-group">
-
-                <input type="text" class="form-control" placeholder="PhoneNo" required asp-for="PhoneNo" />
-
-
+                <input type="number" class="form-control" placeholder="PhoneNo" required asp-for="PhoneNo" />
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Register</button>

@@ -7,13 +7,15 @@ namespace ATM_Banking_System.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public int AccNo { get; set; }
+        [Range(1000000000,9999999999)]
+        public long AccNo { get; set; }
         [Required]
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
         public char Gender { get; set; }
         public DateTime DOB { get; set; }
-        public string Address { get; set; }
-        public string PhoneNo { get; set; }
+        public string? Address { get; set; }
+        [Range(1000000000,9999999999)]
+        public long PhoneNo { get; set; }
 
     }
 }

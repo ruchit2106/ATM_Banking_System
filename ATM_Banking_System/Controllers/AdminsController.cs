@@ -97,7 +97,7 @@ namespace ATM_Banking_System.Controllers
                 lT.Add(new Transaction()
                 {
                     Type = sdr["Type"].ToString(),
-                    AccNo = Convert.ToInt32(sdr["AccNo"]),
+                    AccNo = Convert.ToInt64(sdr["AccNo"]),
                     dtOfTransaction = Convert.ToDateTime(sdr["dtOfTransaction"]),
                     Amount = Convert.ToInt32(sdr["Amount"]),
                 });

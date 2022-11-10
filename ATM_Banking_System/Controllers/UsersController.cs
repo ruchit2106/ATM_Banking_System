@@ -49,7 +49,7 @@ namespace ATM_Banking_System.Controllers
 
             string query1 = "SELECT Balance FROM Users WHERE AccNo=@AccNo";
             SqlCommand cmd1 = new SqlCommand(query1, con);
-            cmd1.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd1.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
             DataTable ds1 = new DataTable();
@@ -59,14 +59,14 @@ namespace ATM_Banking_System.Controllers
             string query2 = " UPDATE Users SET Balance = @Balance WHERE AccNo=@AccNo;";
             SqlCommand cmd2 = new SqlCommand(query2,con);
             cmd2.Parameters.AddWithValue("@Balance", (Convert.ToInt32(ds1.Rows[0][0])+ud.Amount));
-            cmd2.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd2.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             cmd2.ExecuteNonQuery();
             con.Close();
 
             Transaction t =new Transaction();
             t.Type = "Deposit";
-            t.AccNo = httpContextAccessor.HttpContext.Session.GetInt32("AccNo");
+            t.AccNo = Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
             t.dtOfTransaction=DateTime.Now;
             t.Amount=ud.Amount;
             t.currAmountOfATM+=(amount+t.Amount);
@@ -98,7 +98,7 @@ namespace ATM_Banking_System.Controllers
 
             string query1 = "SELECT Balance FROM Users WHERE AccNo=@AccNo";
             SqlCommand cmd1 = new SqlCommand(query1, con);
-            cmd1.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd1.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
             DataTable ds1 = new DataTable();
@@ -108,14 +108,14 @@ namespace ATM_Banking_System.Controllers
             string query2 = "UPDATE Users SET Balance = @Balance WHERE AccNo=@AccNo;";
             SqlCommand cmd2 = new SqlCommand(query2, con);
             cmd2.Parameters.AddWithValue("@Balance", (Convert.ToInt32(ds1.Rows[0][0]) - ud.Amount));
-            cmd2.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd2.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             cmd2.ExecuteNonQuery();
             con.Close();
 
             Transaction t = new Transaction();
             t.Type = "Withdraw";
-            t.AccNo = httpContextAccessor.HttpContext.Session.GetInt32("AccNo");
+            t.AccNo = Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
             t.dtOfTransaction = DateTime.Now;
             t.Amount = ud.Amount;
             t.currAmountOfATM = (amount - ud.Amount);
@@ -133,7 +133,7 @@ namespace ATM_Banking_System.Controllers
             SqlConnection con = new SqlConnection(connectionString);
             string query = "SELECT Balance FROM Users WHERE AccNo=@AccNo";
             SqlCommand cmd= new SqlCommand(query,con);
-            cmd.Parameters.AddWithValue("@AccNo",httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd.Parameters.AddWithValue("@AccNo",Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -152,7 +152,7 @@ namespace ATM_Banking_System.Controllers
             SqlConnection con = new SqlConnection(connectionString);
             string query = "SELECT * FROM [Transaction] WHERE [AccNo]=@AccNo";
             SqlCommand cmd = new SqlCommand(query,con);
-            cmd.Parameters.AddWithValue("@AccNo",httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd.Parameters.AddWithValue("@AccNo",Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             SqlDataReader sdr;
             sdr=cmd.ExecuteReader();
@@ -183,7 +183,7 @@ namespace ATM_Banking_System.Controllers
             string query = "UPDATE Users SET PIN=@PIN WHERE AccNo=@AccNo";
             SqlConnection con = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@AccNo",httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd.Parameters.AddWithValue("@AccNo",Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             cmd.Parameters.AddWithValue("@PIN", ucPIN.PIN);
             con.Open();
             cmd.ExecuteNonQuery();
@@ -216,7 +216,7 @@ namespace ATM_Banking_System.Controllers
 
             string query1 = "SELECT Balance FROM Users WHERE AccNo=@AccNo";
             SqlCommand cmd1 = new SqlCommand(query1, con);
-            cmd1.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd1.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             SqlDataAdapter sda1 = new SqlDataAdapter(cmd1);
             DataTable ds1 = new DataTable();
@@ -226,14 +226,14 @@ namespace ATM_Banking_System.Controllers
             string query2 = "UPDATE Users SET Balance = @Balance WHERE AccNo=@AccNo;";
             SqlCommand cmd2 = new SqlCommand(query2, con);
             cmd2.Parameters.AddWithValue("@Balance", (Convert.ToInt32(ds1.Rows[0][0]) - denomination));
-            cmd2.Parameters.AddWithValue("@AccNo", httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
+            cmd2.Parameters.AddWithValue("@AccNo", Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo")));
             con.Open();
             cmd2.ExecuteNonQuery();
             con.Close();
 
             Transaction t = new Transaction();
             t.Type = "Withdraw";
-            t.AccNo = httpContextAccessor.HttpContext.Session.GetInt32("AccNo");
+            t.AccNo = Convert.ToInt64(httpContextAccessor.HttpContext.Session.GetInt32("AccNo"));
             t.dtOfTransaction = DateTime.Now;
             t.Amount = denomination;
             t.currAmountOfATM = (amount - denomination);

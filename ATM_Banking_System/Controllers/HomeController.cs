@@ -1,5 +1,6 @@
 ﻿using ATM_Banking_System.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Diagnostics;
@@ -42,6 +43,10 @@ namespace ATM_Banking_System.Controllers
         [HttpPost]
         public IActionResult loginUser(loginUser u)
         {
+            if(!ModelState.IsValid)
+            {
+                return RedirectToAction("loginUser");
+            }
             connectionString = configuration.GetConnectionString("MyAppConnString");
             string query = "SELECT COUNT(*) FROM Users WHERE AccNo=@AccNo AND PIN=@PIN";
             SqlConnection con = new SqlConnection(connectionString);
@@ -53,7 +58,7 @@ namespace ATM_Banking_System.Controllers
             con.Close();
             if(c==1)
             {
-                httpContextAccessor.HttpContext.Session.SetInt32("AccNo",u.AccNo);
+                httpContextAccessor.HttpContext.Session.SetInt32("AccNo",Convert.ToInt32(u.AccNo));
                 return RedirectToAction("UserDashboard","Users");
             }
             else
@@ -104,20 +109,21 @@ namespace ATM_Banking_System.Controllers
         [HttpPost]
         public async Task<IActionResult> registerUser(AddUser u)
         {
-            var user = new Users()
-            {
-                AccNo = u.AccNo,
-                PIN = u.PIN,
-                Balance = 0,
-                FullName = u.FullName,
-                Gender = u.Gender,
-                DOB = u.DOB,
-                Address = u.Address,
-                PhoneNo = u.PhoneNo,
-            };
-            await myAppDbContext.Users.AddAsync(user);
-            await myAppDbContext.SaveChangesAsync();
-            return RedirectToAction("registerUser");
+                var user = new Users()
+                {
+                    AccNo = u.AccNo,
+                    PIN = u.PIN,
+                    Balance = 0,
+                    FullName = u.FullName,
+                    Gender = u.Gender,
+                    DOB = u.DOB,
+                    Address = u.Address,
+                    PhoneNo = u.PhoneNo,
+                };
+                await myAppDbContext.Users.AddAsync(user);
+                await myAppDbContext.SaveChangesAsync();
+                return RedirectToAction("registerUser");
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

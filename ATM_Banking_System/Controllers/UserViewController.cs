@@ -39,12 +39,12 @@ namespace ATM_Banking_System.Controllers
                 lU.Add(new UserViewModel()
                 {
                     Id = Convert.ToInt32(sdr["Id"]),
-                    AccNo = Convert.ToInt32(sdr["AccNo"]),
+                    AccNo = Convert.ToInt64(sdr["AccNo"]),
                     FullName = sdr["FullName"].ToString(),
                     Gender = Convert.ToChar(sdr["Gender"]),
                     DOB = Convert.ToDateTime(sdr["DOB"]),
                     Address = sdr["Address"].ToString(),
-                    PhoneNo = sdr["PhoneNo"].ToString(),
+                    PhoneNo = Convert.ToInt64(sdr["PhoneNo"]),
                 });
             }
             con.Close();
@@ -78,12 +78,12 @@ namespace ATM_Banking_System.Controllers
             while(sdr.Read())
             {
                 uVM.Id = Convert.ToInt32(sdr["Id"]);
-                uVM.AccNo = Convert.ToInt32(sdr["AccNo"]);
+                uVM.AccNo = Convert.ToInt64(sdr["AccNo"]);
                 uVM.FullName = sdr["FullName"].ToString();
                 uVM.Gender = Convert.ToChar(sdr["Gender"]);
                 uVM.DOB = Convert.ToDateTime(sdr["DOB"]);
                 uVM.Address = sdr["Address"].ToString();
-                uVM.PhoneNo = sdr["PhoneNo"].ToString();
+                uVM.PhoneNo = Convert.ToInt64(sdr["PhoneNo"]);
             }
             con.Close();
             return uVM;
@@ -101,8 +101,6 @@ namespace ATM_Banking_System.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
                 SqlConnection con = new SqlConnection(connectionString);
                 string query = "UPDATE Users SET AccNo=@AccNo,FullName=@FullName,Gender=@Gender,DOB=@DOB,Address=@Address,PhoneNo=@PhoneNo WHERE Id=@Id";
                 SqlCommand cmd=new SqlCommand(query, con);
@@ -117,8 +115,8 @@ namespace ATM_Banking_System.Controllers
                 cmd.ExecuteNonQuery();
                 con.Close();
                 return RedirectToAction(nameof(Index));
-            }
-            return View(userViewModel);
+
+            //return View(userViewModel);
         }
 
         // GET: UserView/Delete/5
@@ -134,12 +132,12 @@ namespace ATM_Banking_System.Controllers
             while(sdr.Read())
             {
                 uVM.Id = (int)id;
-                uVM.AccNo = Convert.ToInt32(sdr["AccNo"]);
+                uVM.AccNo = Convert.ToInt64(sdr["AccNo"]);
                 uVM.FullName = sdr["FullName"].ToString();
                 uVM.Gender = Convert.ToChar(sdr["Gender"]);
                 uVM.DOB = Convert.ToDateTime(sdr["DOB"]);
                 uVM.Address = sdr["Address"].ToString();
-                uVM.PhoneNo = sdr["PhoneNo"].ToString();
+                uVM.PhoneNo = Convert.ToInt64(sdr["PhoneNo"]);
             }
             //ViewData["data"] = uVM;
             return View(uVM);
